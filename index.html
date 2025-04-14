@@ -4,97 +4,98 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vai no dado</title>
+    <!--descrição-->
     <meta
       name="description"
       conten="Explore dezenas de mesas RPGisticas, aqui sua histório está prestes a comecar!"
     />
-    <!--descrição-->
+    <!--fontes-->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/asset/favicon.ico" type="image/x-icon">
   </head>
   <body>
     <header>
       <!--header do nav-->
       <nav>
         <!--navegação-->
-        <span>Vai no dado!</span>
-        <ul>
+        <span class="logo">Vai no dado!</span>
+        <ul class="menu">
           <!--links-->
           <li><a href="#">Home</a></li>
           <li><a href="#">Mesas</a></li>
           <li><a href="#">Novidades</a></li>
           <li><a href="#">Bestiario</a></li>
         </ul>
-        <a href="#">GitHub</a>
+        <a href="#" class="github">GitHub</a>
       </nav>
     </header>
     <main>
-      <section>
-        <header>
-          <!--header do hero-->
-          <span>Novidade</span>
-          <h1>Encontre a Mesa Perfeita!</h1>
-          <hr />
-          <h2>
-            <!--subtitúlo-->
-            Explore dezenas de mesas RPGisticas, aqui sua história está prestes
-            a comecar!
-          </h2>
-        </header>
-      </section>
+      <div class="hero-backgrond">
+        <section class="hero">
+          <header class="hero-conteudo">
+            <!--header do hero-->
+            <span class="destaque roxo">Novidade</span>
+            <h1>Encontre a Mesa Perfeita!</h1>
+            <hr />
+            <h2 class="subtitulo">
+              <!--subtitúlo-->
+              Explore dezenas de mesas RPGisticas, aqui sua história está
+              prestes a começar!
+            </h2>
+          </header>
+          <!--imagens-header-->
+          <div class="hero-images-container">
+            <img src="/asset/magico.png" alt="Magico" />
 
-      <section>
-        <!--imagens-header-->
-        <div>
-          <figure>
-            <img src="/asset/1.jpg" alt="Rpg de MesaRpg de Mesa" />
-          </figure>
-          <figure><img src="/asset/2.jpg" alt="Rpg de Mesa" /></figure>
-          <figure><img src="/asset/3.jpg" alt="Rpg de Mesa" /></figure>
-          <figure><img src="/asset/4.jpg" alt="Rpg de Mesa" /></figure>
-          <figure><img src="/asset/5.jpg" alt="Rpg de Mesa" /></figure>
-          <figure><img src="/asset/6.jpg" alt="Rpg de Mesa" /></figure>
-          <figure><img src="/asset/7.jpg" alt="Rpg de Mesa" /></figure>
-          <figure><img src="/asset/8.jpg" alt="Rpg de Mesa" /></figure>
-          <figure><img src="/asset/9.jpg" alt="Rpg de Mesa" /></figure>
-          <figure><img src="/asset/10.jpg" alt="Rpg de Mesa" /></figure>
-          <figure><img src="/asset/11.jpg" alt="Rpg de Mesa" /></figure>
-          <figure><img src="/asset/12.jpg" alt="Rpg de Mesa" /></figure>
-        </div>
-      </section>
-      <section>
-        <button>
+            <!--"https://www.flaticon.com" caso alguem se interesse, achei as imagens neste site. Elas não possuem direitos altorais. -->
+          </div>
+        </section>
+      </div>
+      <section class="botao-container">
+        <button type="button">
           <!--seta para baixo ⬇-->
-          <img src="/asset/button-1.png" alt="Imagem de uma seta" />
+          <img src="/asset/button-2.png" alt="Imagem de uma seta" />
         </button>
       </section>
-      <section>
-        <!--Mesas-->
-        <header>
-          <span>Mesas</span>
-          <h2>Confira as ultimas campanhas</h2>
+      <!--Mesas-->
+      <section class="mesas">
+        <header class="mesas-cabecalho">
+          <span class="destaque roxo">Mesas</span>
+          <h2 class="mesas-titulos">Confira as ultimas campanhas</h2>
           <!--titúlo-->
-          <p>De uma olhada nas aventuras mais amadas!</p>
+          <p class="mesas-subtitulo">
+            De uma olhada nas aventuras mais amadas!
+          </p>
           <!--subtitúlo-->
         </header>
-        <div>
+        <div class="mesas-card-container">
           <!--container com os fedbacks-->
-          <header>
+          <div class="mesas-card">
+            <header class="mesas-card-cabecalho">
+              <div class="card">
+                <span class="destaque amarelo">Em alta 🔥</span>
+                <h3>Ordem Paranormal</h3>
+              </div>
+              <p>Incrivel • 5/5</p>
+            </header>
+            <p>
+              Uma aventura ideal para os amantes de Horror Sangrento com um
+              toque investigativo e sobrenatural. 🩸
+            </p>
             <div>
-              <span>Em alta 🔥</span>
-              <h3>Ordem Paranormal</h3>
+              <img
+                src="/asset/Rayla Germano.jpg"
+                alt="imagem de uma mulher com uma cicatriz no rosto."
+              />
+              <span class="destaque">Rayla Germano</span>
+              <!--uma das minhas primeiras antagonistas no univer de ordem paranormal-->
             </div>
-            <p>Incrivel • 5/5</p>
-          </header>
-          <p>
-            Uma aventura ideal para os amantes de Horror Sangrento com um toque
-            investigativo e sobrenatural. 🩸
-          </p>
-          <div>
-            <img
-              src="/asset/Rayla Germano.jpg"
-              alt="imagem de uma mulher com uma cicatriz no rosto."
-            />
-            <span>Rayla Germano</span>
-            <!--umadas minhas primeiras antagonistas no univer de ordem paranormal-->
           </div>
         </div>
       </section>
