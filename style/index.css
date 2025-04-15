@@ -105,6 +105,10 @@ hr {
   font-size: 2rem;
   font-weight: 600;
 }
+.logo-home{
+  text-decoration: none;
+  color: var(--cor5);
+}
 .menu {
   display: flex;
   flex-direction: row;
