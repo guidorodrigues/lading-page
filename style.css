@@ -157,7 +157,7 @@ hr {
 .roxo {
   color: var(--cor0);
 }
-.amarelo{
+.rosa {
   color: #ff0086;
 }
 
@@ -198,16 +198,66 @@ button:hover {
   gap: 2rem;
   flex-basis: 29rem;
 }
-.mesas-card-cabecalho{
+.mesas-card-cabecalho {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: end;
-
 }
-.mesas-card{
+.card {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem
-  ;
+  gap: 0.5rem;
+}
+.card-titulo {
+  color: var(--cor5);
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.card-avaliacao {
+  color: var(--cor6);
+  font-size: 1rem;
+  font-weight: 500;
+}
+.card-descricao {
+  color: var(--cor6);
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: justify;
+}
+.card-autor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+.card-autor > img {
+  border-radius: 20rem;
+  width: 2rem;
+}
+.autor-nome{
+  color: var(--cor6);
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+footer{
+  background-color: var(--cor4);
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  gap: 0.6rem;
+}
+.footer-copy{
+  color: var(--cor5);
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.footer-autor{
+  color: rgba(255, 242, 231, 0.50);
 }
