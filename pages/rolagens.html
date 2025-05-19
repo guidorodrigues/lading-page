@@ -1,29 +1,29 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
+<html lang="pt-BR">
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dice</title>
+    <title>Rolagens Paranormais</title>
+    <link rel="stylesheet" href="/style/roll.css" />
     <link rel="stylesheet" href="/style/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="/asset/favicon.ico" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap"
       rel="stylesheet"
     />
+    <script src="/pages/script.js"></script>
   </head>
   <body>
     <div>
       <header>
-        <!-- header do nav -->
         <nav>
-          <!-- navegação -->
-          <span class="logo">
-            <a href="/pages/index.html" class="logo-home">DICE</a>
-          </span>
+          <span class="logo"
+            ><a href="/pages/index.html" class="logo-home">DICE</a></span
+          >
           <div class="menu-container">
             <ul class="menu">
-              <!-- links -->
               <li><a href="index.html">Home</a></li>
               <li><a href="/pages/rolagens.html">Rolagens</a></li>
               <li><a href="#">Novidades</a></li>
@@ -38,51 +38,93 @@
           >
         </nav>
       </header>
-      <main class="container">
-    <div class="hero-background">
-      <section>
-        <table class="rolagens-table">
-        <thead>
-          <tr>
-            <th>d20</th>
-            <th>d12</th>
-            <th>d10</th>
-            <th>d8</th>
-            <th>d6</th>
-            <th>d4</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td id="d20-result">0</td>
-            <td id="d12-result">0</td>
-            <td id="d10-result">0</td>
-            <td id="d8-result">0</td>
-            <td id="d6-result">0</td>
-            <td id="d4-result">0</td>
-          </tr>
-          <tr>
-            <td><button onclick="rollDice(20, 'd20-result')">Rolar</button></td>
-            <td><button onclick="rollDice(12, 'd12-result')">Rolar</button></td>
-            <td><button onclick="rollDice(10, 'd10-result')">Rolar</button></td>
-            <td><button onclick="rollDice(8, 'd8-result')">Rolar</button></td>
-            <td><button onclick="rollDice(6, 'd6-result')">Rolar</button></td>
-            <td><button onclick="rollDice(4, 'd4-result')">Rolar</button></td>
-          </tr>
-        </tbody>
-        </table>
-      </section>
     </div>
-    <script src="script.js"></script>
+    <main class="container">
+      <div class="hero-background">
+        <section>
+          <table class="rolagens-table">
+            <thead>
+              <tr>
+                <th>d20</th>
+                <th>d12</th>
+                <th>d10</th>
+                <th>d8</th>
+                <th>d6</th>
+                <th>d4</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span id="d20-result" class="dice-result">-</span></td>
+                <td><span id="d12-result" class="dice-result">-</span></td>
+                <td><span id="d10-result" class="dice-result">-</span></td>
+                <td><span id="d8-result" class="dice-result">-</span></td>
+                <td><span id="d6-result" class="dice-result">-</span></td>
+                <td><span id="d4-result" class="dice-result">-</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <button onclick="rollDice(20, 'd20-result')">Rolar</button>
+                </td>
+                <td>
+                  <button onclick="rollDice(12, 'd12-result')">Rolar</button>
+                </td>
+                <td>
+                  <button onclick="rollDice(10, 'd10-result')">Rolal</button>
+                </td>
+                <td>
+                  <button onclick="rollDice(8, 'd8-result')">Rolar</button>
+                </td>
+                <td>
+                  <button onclick="rollDice(6, 'd6-result')">Rolar</button>
+                </td>
+                <td>
+                  <button onclick="rollDice(4, 'd4-result')">Rolar</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section class="custom-roll">
+          <h2>Rolagem Personalizada</h2>
+          <div class="custom-roll-inputs">
+            <input
+              type="number"
+              id="dice-count"
+              min="1"
+              max="10"
+              value="1"
+              style="width: 60px"
+            />
+            <span>d</span>
+            <input
+              type="number"
+              id="dice-sides"
+              min="2"
+              max="100"
+              value="6"
+              style="width: 80px"
+            />
+            <span>+</span>
+            <input
+              type="number"
+              id="dice-bonus"
+              min="0"
+              max="100"
+              value="0"
+              style="width: 80px"
+            />
+            <button onclick="rollCustomDice()">Rolar</button>
+          </div>
+          <div id="custom-roll-result" class="custom-roll-result"></div>
+        </section>
+      </div>
     </main>
-    <script>
-        
-    </script>
-    <footer>
-      <!--rodapé-->
-      <p class="footer-copy">Copyright &lt;VAINODADO/&gt; 2025</p>
-      <!--";&lt &gt"; para colocar "<>" sem ser tag-->
-      <p class="footer-autor">Desenvolvido por Guido Rodrigues</p>
-    </footer>
+     <footer>
+        <!--rodapé-->
+        <p class="footer-copy">Copyright &lt;VAINODADO/&gt; 2025</p>
+        <!--";&lt &gt"; para colocar "<>" sem ser tag-->
+        <p class="footer-autor">Desenvolvido por Guido Rodrigues</p>
+      </footer>
   </body>
 </html>

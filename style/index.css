@@ -272,19 +272,3 @@ footer {
 .footer-autor {
   color: rgba(255, 242, 231, 0.5);
 }
-
-.rolagens-table {
-  text-align: center;
-  margin: auto;
-  border-collapse: collapse;
-  font-size: 2rem;
-  margin-bottom: 1.5em;
-  margin-top: 1.5em;
-}
-
-.rolagens-table th,
-.rolagens-table td {
-  padding: 1rem;
-  border: 1px solid var(--cor0);
-}
-
