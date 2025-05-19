@@ -6,12 +6,13 @@ This is a landing page project built with HTML5, CSS3, and JavaScript.
 
 ## About
 
-The goal is to have a modern, responsive, and functional homepage, perfect for showcasing products, services, or a portfolio. Everything was built from scratch, focusing on best practices and a pleasant visual design.
+The goal is to have a modern and functional homepage, perfect for showcasing products, services, or a portfolio. Everything was built from scratch, focusing on best practices and a pleasant visual design.
 
 ## Status
 
 🚧 In development 🚧  
-I am still implementing features and improvements.
+I am still implementing features and improvements.  
+**Note:** The site is not yet responsive for mobile devices.
 
 ## How to use
 
@@ -23,7 +24,7 @@ I am still implementing features and improvements.
 
 ## What's coming next
 
-- Fully responsive layout
+- Responsive design for mobile devices
 - Animations using JavaScript
 - Contact section
 - Social media links
@@ -33,5 +34,4 @@ I am still implementing features and improvements.
 If you want to suggest something or help, feel free to open an issue or submit a pull request!
 
 ## Licença
-
-Este projeto está sob a licença MIT.
+This project is licensed under the MIT License.
